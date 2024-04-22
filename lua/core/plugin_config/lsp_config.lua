@@ -60,3 +60,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
   end,
 })
+
+-- to refactoring in all project:
+-- :vimgrep /vim/ `find . -type f`
+-- :copen
+-- :vimgrep /vim/ `find . -type f`
