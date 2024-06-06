@@ -1,11 +1,14 @@
 require("lazy").setup({
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+{ "neoclide/coc.nvim", branch="release" },
+  { "catppuccin/nvim",                name = "catppuccin", priority = 1000 },
   "tpope/vim-commentary",
   "mattn/emmet-vim",
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
   "ellisonleao/gruvbox.nvim",
-  { "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" }},
+  { "elixir-tools/elixir-tools.nvim", tag = "stable",      requires = { "nvim-lua/plenary.nvim" } },
+  "efm-langserver",
+  "elixir",
   "dracula/vim",
   "nvim-lualine/lualine.nvim",
   "nvim-treesitter/nvim-treesitter",
@@ -36,7 +39,20 @@ require("lazy").setup({
     run = "cd app && npm install",
   },
   {
-    "nvim-telescope/telescope.nvim", tag = "0.1.4",
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
+  {"ray-x/lsp_signature.nvim"},
+  {
+    "VonHeikemen/lsp-zero.nvim",
+    requires = {
+        {"neovim/nvim-lspconfig"}, {"williamboman/mason.nvim"},
+        {"williamboman/mason-lspconfig.nvim"}, {"hrsh7th/nvim-cmp"},
+        {"hrsh7th/cmp-buffer"}, {"hrsh7th/cmp-path"},
+        {"saadparwaiz1/cmp_luasnip"}, {"hrsh7th/cmp-nvim-lsp"},
+        {"hrsh7th/cmp-nvim-lua"}, {"L3MON4D3/LuaSnip"},
+        {"rafamadriz/friendly-snippets"}
+    }
+  }
 })
