@@ -7,8 +7,6 @@ require("lazy").setup({
   "nvim-tree/nvim-web-devicons",
   "ellisonleao/gruvbox.nvim",
   { "elixir-tools/elixir-tools.nvim", tag = "stable",      requires = { "nvim-lua/plenary.nvim" } },
-  "efm-langserver",
-  "elixir",
   "dracula/vim",
   "nvim-lualine/lualine.nvim",
   "nvim-treesitter/nvim-treesitter",

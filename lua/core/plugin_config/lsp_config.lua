@@ -11,6 +11,8 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
+lsp.format_on_save({servers = {["gopls"] = {'go'}}, {["elixirls"] = {'elixir'}}})
+
 lsp.on_attach(function(_, bufnr) lsp.default_keymaps({buffer = bufnr}) end)
 
 require("mason-lspconfig").setup({
