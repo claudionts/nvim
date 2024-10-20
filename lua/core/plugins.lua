@@ -1,5 +1,4 @@
 require("lazy").setup({
-{ "neoclide/coc.nvim", branch="release" },
   { "catppuccin/nvim",                name = "catppuccin", priority = 1000 },
   "tpope/vim-commentary",
   "mattn/emmet-vim",
@@ -24,7 +23,6 @@ require("lazy").setup({
   "L3MON4D3/LuaSnip",
   "saadparwaiz1/cmp_luasnip",
   "rafamadriz/friendly-snippets",
-  "github/copilot.vim",
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",

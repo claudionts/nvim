@@ -24,7 +24,7 @@ require("mason-lspconfig").setup({
         end
     },
     ensure_installed = {
-        "dockerls", "jsonls", "elixirls", "yamlls", "lua_ls", "ltex", "clangd",
+        "dockerls", "jsonls", "elixirls", "yamlls",
         "gopls"
     }
 })
