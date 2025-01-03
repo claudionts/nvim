@@ -16,7 +16,6 @@ require("lazy").setup({
   "tpope/vim-fugitive",
   "tpope/vim-surround",
   "stevearc/oil.nvim",
-  -- completion
   "iberianpig/tig-explorer.vim",
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-nvim-lsp",
