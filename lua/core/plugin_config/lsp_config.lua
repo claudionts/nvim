@@ -9,7 +9,7 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 
 local lsp = require("lsp-zero")
 
-lsp.preset("recommended")
+lsp.extend_lspconfig("recommended")
 
 lsp.format_on_save({servers = {["gopls"] = {'go'}}, {["elixirls"] = {'elixir'}}})
 
